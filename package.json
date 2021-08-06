@@ -4,7 +4,8 @@
   "description": "Pure javascript project",
   "main": "index.js",
   "scripts": {
-    "start": ""
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   "author": "Chanhee Jeong",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
   }
 }
