@@ -1,5 +1,69 @@
+/* base styles : font, theme colors and stuff */
+:root {
+  --primary: whitesmoke;
+  --secondary: rgba(173, 173, 173, 0.774);
+  --warning: red;
+}
+
+html,
 body{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font: "Times New Roman";
+  font-size: 1.1em;
+}
+ul, p, li{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  align-self: center;
+  justify-self: center;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+body {
+  display: grid;
+  grid-template-columns: minmax(400px, 620px);
+  grid-template-rows: minmax(auto, 50px) 1fr minmax(auto, 50px);
+}
+.image-container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: minmax(250px, 450px);
+  grid-template-rows: minmax(250px, 450px);
+  align-content: center;
+  justify-content: center;
+}
+
+/* tablet */
+
+@media screen and (min-width: 620px) {
+  body {
+    font-size: 1.2rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(auto, 100px);
+    grid-template-rows: minmax(auto, 55px) 1fr minmax(auto, 55px);
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, 60px) 1fr minmax(auto, 60px);
+  }
 }

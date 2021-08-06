@@ -1,7 +1,7 @@
 
 .search-box-wrapper{
     display: grid;
-    grid-template-columns: minmax(auto, 50px) minmax(auto, 300px) minmax(auto, 50px);
+    grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 90%;
     align-items: center;
     justify-content: center;
@@ -10,24 +10,24 @@
 .search-box-wrapper input{
     border: none;
     outline: none;
-    padding-right: 4.5%;
-    padding-left: 12%;
+    padding-left: 15%;
     height:100%;
     grid-column: 1/4;
     grid-row: 1/2;
     font-size: 1.2rem;
-    border-radius:40px;
-    background-color: whitesmoke;
+    border-radius: 30px;
+    background-color: var(--secondary);
 }
 .search-box-wrapper ::placeholder{
-    color: lightcoral
+    color: var(--primary)
 }
 .search-button{
+    color: var(--secondary);
     display: grid;
-    background-color: lightcoral;
+    background-color: var(--primary);
     border-radius: 90%;
-    height: 85%;
-    width: 65%;
+    height:1.6em;
+    width: 1.6em;
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
@@ -37,6 +37,7 @@
 }
 .reset-button{
     display: grid;
+    color: var(--primary);
     grid-row: 1/2;
     grid-column: 3/4;
     justify-content: center;
