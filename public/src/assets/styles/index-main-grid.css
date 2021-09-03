@@ -1,0 +1,9 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}

@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="src/assets/styles/index-grid.css" />
-    <link rel="stylesheet" href="src/assets/styles/index.css" />
+    <link rel="stylesheet" href="src/assets/styles/default-web-style.css" />
+    <!-- index-default-style.css must be loaded first! -->
     <link rel="stylesheet" href="src/assets/styles/header-style.css" />
-    <link rel="stylesheet" href="src/assets/styles/main-style.css" />
+    <link rel="stylesheet" href="src/assets/styles/index-main-grid.css" />
+    <link rel="stylesheet" href="src/assets/styles/index-header-grid.css" />
+    <link rel="stylesheet" href="src/assets/styles/index-card.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Tokidi-0.1.0</title>
   </head>
@@ -28,8 +30,12 @@
     </header>
     <main>
       <div class="card">
-        <p class="card-name">Johnny Craig</p>
-        <div class="image-container">
+        <div class="card-header">
+          <img src="./favicon.ico" />
+          <p>John Craig</p>
+          <img src="./favicon.ico" />
+        </div>
+        <div class="card-image image-container">
           <img src="./src/assets/images/2.jpg" class="responsive-image" />
         </div>
         <ul>
@@ -37,7 +43,10 @@
           <li><i class="fas fa-search"></i></li>
           <li><i class="fas fa-search"></i></li>
         </ul>
-        <p class="comments">comments</p>
+        <p class="card-comments-title">comments</p>
+        <p class="card-commentor-name">Steven Cho</p>
+        <img src="./favicon.ico" class="card-commentor-picture" />
+        <p class="card-commentor-text">Hi, I like your picture!</p>
       </div>
     </main>
   </body>
