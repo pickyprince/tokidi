@@ -1,8 +1,9 @@
 /* base styles : font, theme colors and stuff */
 :root {
   --primary: whitesmoke;
-  --secondary: rgba(173, 173, 173, 0.774);
-  --warning: red;
+  --secondary: silver;
+  --warning: rgba(255, 30, 0, 0.863);
+  --success: rgba(0, 119, 255, 0.856);
   --font: "Times New Roman";
 }
 
@@ -16,6 +17,8 @@ body{
 }
 ul, p, li{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 li{
     display: inline;
@@ -41,8 +44,8 @@ body {
 .image-container {
   display: grid;
   padding: 1%;
-  grid-template-columns: minmax(250px, 450px);
-  grid-template-rows: minmax(250px, 450px);
+  grid-template-columns: minmax(250px, 400px);
+  grid-template-rows: minmax(250px, 400px);
   align-content: center;
   justify-content: center;
 }
