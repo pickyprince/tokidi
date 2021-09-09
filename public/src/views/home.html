@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="src/assets/styles/default-web-style.css" />
+    <!-- default-web-style.css must be loaded first! -->
+    <link rel="stylesheet" href="src/assets/styles/header-style.css" />
+    <link rel="stylesheet" href="src/assets/styles/home-main-grid.css" />
+    <link rel="stylesheet" href="src/assets/styles/home-header-grid.css" />
+    <link rel="stylesheet" href="src/assets/styles/home-card.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Tokidi-0.1.0</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#"><object type="image/svg+xml" data="./src/assets/images/logo.svg" ></object></a>
+      <form action="" class="search-box-wrapper">
+        <input
+          type="text"
+          class="search-text-box"
+          placeholder="Search..."
+          name="header_search"
+        />
+        <div class="search-button"><i class="fas fa-search"></i></div>
+        <div class="reset-button"><i class="fas fa-times"></i></div>
+      </form>
+      <div class="header-button-group">
+      <a class="header-button" href="#"><i class="fa-lg fas fa-home"></i></a>
+      <a class="header-button" href="#"><i class="fa-lg far fa-edit"></i></a>
+      <a class="header-button" href="#"><i class="fa-lg far fa-bookmark"></i></a>
+      </div>
+    </header>
+    <main>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-header-container">
+            <img
+              src="./src/assets/images/profile.PNG"
+              class="responsive-image"
+            />
+          </div>
+          <div class="name-follow-container">
+            <div style="display: grid; 
+            margin-left: 3%;">
+              <div class="card-header-name">stevenyu.2</div>
+              <div class="card-header-description">Sponsored</div>
+            </div>
+            <div class="card-header-follow">follow</div>
+          </div>
+
+          <div class="card-header-container">
+            <i class="card-header-button fas fa-lg fa-align-justify"></i>
+          </div>
+        </div>
+        <div class="card-image image-container">
+          <img src="./src/assets/images/3.jpg" class="responsive-image" />
+        </div>
+        <ul class="card-button-group">
+          <li><i class="card-button far fa-star"></i></li>
+          <li><i class="card-button far fa-comment"></i></li>
+          <li><i class="card-button far fa-bookmark"></i></li>
+        </ul>
+        <p class="card-stats">139 Likes</p>
+        <div class="card-commentor-box">
+          <p class="card-commentor-name">stevenyu.2</p>
+          <p class="card-commentor-text">Jeju Island tour! fun and exciting! Jeju Island tour! fun and exciting!Jeju Island tour! fun and exciting!Jeju Island tour! fun and exciting!Jeju Island tour! fun and exciting!</p>
+        </div>
+        <div class="card-commentor-box">
+          <p class="card-commentor-name">ggglobalt_T</p>
+          <p class="card-commentor-text">Awesome!</p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

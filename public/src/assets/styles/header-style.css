@@ -1,45 +1,71 @@
+.search-box-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 90%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.search-box-wrapper input {
+  border: none;
+  outline: none;
+  padding-left: 15%;
+  height: 100%;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgba(124, 124, 124, 0.541) 10%, var(--secondary) 30% , rgba(124, 124, 124, 0.226) 100%);
+}
+.search-box-wrapper ::placeholder {
+  color: var(--primary);
+}
+.search-button {
+  color: var(--secondary);
+  display: grid;
+  background-color: var(--primary);
+  border-radius: 90%;
+  height: 1.6em;
+  width: 1.6em;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-content: center;
+}
+.reset-button {
+  display: grid;
+  color: var(--primary);
+  grid-row: 1/2;
+  grid-column: 3/4;
+  justify-content: center;
+  align-content: center;
+}
 
-.search-box-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 90%;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+.header-button-group {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  align-self: center;
+  justify-self:end;
 }
-.search-box-wrapper input{
-    border: none;
-    outline: none;
-    padding-left: 15%;
-    height:100%;
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    background-color: var(--secondary);
+.header-button {
+  display: flex;
+  height: 1.7rem;
+  font-size: 1rem;
+  padding-right: 20%;
+  background: -webkit-linear-gradient(
+      
+    rgb(52, 1, 163) 30%,
+    rgba(131, 107, 93, 0.781) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.search-box-wrapper ::placeholder{
-    color: var(--primary)
-}
-.search-button{
-    color: var(--secondary);
-    display: grid;
-    background-color: var(--primary);
-    border-radius: 90%;
-    height:1.6em;
-    width: 1.6em;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-    align-content: center;
-}
-.reset-button{
-    display: grid;
-    color: var(--primary);
-    grid-row: 1/2;
-    grid-column: 3/4;
-    justify-content: center;
-    align-content: center;
+i {
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
 }
